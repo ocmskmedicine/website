@@ -8,6 +8,7 @@
   --navy: #1B3A5C;
   --navy-dark: #122840;
   --navy-mid: #24527A;
+  --sea-salt-green: #7BA098;
   --gold: #C4963A;
   --gold-light: #D9AE58;
   --gold-pale: #F5EDD8;
@@ -146,10 +147,11 @@ h1, h2, h3, h4 {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   padding: 20px 0;
+  background: var(--sea-salt-green);
   transition: background var(--transition), padding var(--transition), box-shadow var(--transition);
 }
 .navbar.scrolled {
-  background: var(--navy-dark);
+  background: var(--sea-salt-green);
   padding: 12px 0;
   box-shadow: 0 2px 20px rgba(0,0,0,0.25);
 }
