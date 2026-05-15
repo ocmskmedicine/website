@@ -799,6 +799,31 @@ h1, h2, h3, h4 {
   margin-bottom: 28px;
   font-size: 0.95rem;
 }
+.under-construction-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.btn-outline-navy {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn-outline-navy:hover {
+  background: var(--navy);
+  color: var(--white);
+}
 .form-group { margin-bottom: 20px; }
 .form-group label {
   display: block;
