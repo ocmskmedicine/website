@@ -1068,4 +1068,8 @@ footer {
   .credential-strip .container { flex-direction: column; }
   .champion-grid { flex-direction: column; gap: 24px; }
   .credential-strip .container { gap: 0; }
+  .logo-img { height: 30px; }
+  .logo-text { font-size: 0.78rem; }
+  .logo-sub { font-size: 0.62rem; display: block; }
+  .nav-logo { gap: 8px; }
 }
