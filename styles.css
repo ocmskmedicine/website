@@ -241,8 +241,8 @@ h1, h2, h3, h4 {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(18, 40, 64, 0.88) 0%,
-    rgba(27, 58, 92, 0.72) 100%
+    rgba(18, 40, 64, 0.60) 0%,
+    rgba(27, 58, 92, 0.42) 100%
   );
 }
 .hero-content {
