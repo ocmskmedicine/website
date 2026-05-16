@@ -649,13 +649,21 @@ h1, h2, h3, h4 {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--gray-light);
 }
-.pub-list { display: flex; flex-direction: column; gap: 10px; }
+.pub-list { display: flex; flex-direction: column; gap: 10px; counter-reset: pub-counter; }
 .pub-item {
   font-size: 0.875rem;
   color: var(--text-light);
   line-height: 1.65;
   padding-left: 16px;
   border-left: 2px solid var(--gray-light);
+  counter-increment: pub-counter;
+  position: relative;
+}
+.pub-item::before {
+  content: counter(pub-counter) ". ";
+  font-weight: 600;
+  color: var(--gold);
+  margin-right: 4px;
 }
 .pub-item strong { color: var(--text); }
 
