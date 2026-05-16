@@ -235,7 +235,7 @@ h1, h2, h3, h4 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('soccer-art.png') center center / cover no-repeat;
+  background: url('Soccer.jpg') center center / cover no-repeat;
 }
 .hero-overlay {
   position: absolute;
