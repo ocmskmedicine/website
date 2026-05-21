@@ -37,6 +37,20 @@ function toggleAccordion(btn) {
   }
 }
 
+// PRP Modal
+function openPRPModal() {
+  document.getElementById('prp-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePRPModal(e) {
+  if (e && e.target !== document.getElementById('prp-modal')) return;
+  document.getElementById('prp-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { document.getElementById('prp-modal').classList.remove('open'); document.body.style.overflow = ''; }
+});
+
 // Contact form handler (placeholder — wire to backend/form service as needed)
 function handleFormSubmit(e) {
   e.preventDefault();
