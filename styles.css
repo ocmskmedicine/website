@@ -1158,7 +1158,7 @@ footer {
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; }
   .btn { text-align: center; }
-  .cred-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 12px 16px; }
+  .cred-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 12px 16px; width: 100%; justify-content: flex-start; }
   .credential-strip .container { flex-direction: column; }
   .champion-grid { flex-direction: column; gap: 24px; }
   .credential-strip .container { gap: 0; }
