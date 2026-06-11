@@ -46,7 +46,7 @@ test.describe('Navigation', () => {
 
   test('privacy policy link in footer', async ({ page }) => {
     await page.goto('/');
-    await page.locator('footer').getByRole('link', { name: 'Privacy Policy' }).click();
+    await page.locator('footer').getByRole('link', { name: 'Privacy Policy' }).first().click();
     await expect(page).toHaveTitle(/Privacy Policy/);
   });
 });
