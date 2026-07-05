@@ -852,6 +852,43 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================
+   INSURANCE
+   ============================================ */
+.insurance-section {
+  padding: 100px 0;
+  background: var(--off-white);
+}
+.insurance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 48px 0 32px;
+}
+.insurance-item {
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  font-weight: 500;
+  color: var(--navy);
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow);
+}
+.insurance-note {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.insurance-note a {
+  color: var(--gold);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact {
@@ -1148,6 +1185,7 @@ footer {
 
   .champion-grid { gap: 32px; }
 
+  .insurance-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
 
