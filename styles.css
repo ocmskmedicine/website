@@ -609,7 +609,7 @@ h1, h2, h3, h4 {
 }
 .about-dr-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 72px;
   align-items: start;
 }
@@ -1174,7 +1174,7 @@ footer {
    ============================================ */
 @media (max-width: 1024px) {
   .treatments-grid { grid-template-columns: repeat(2, 1fr); }
-  .about-dr-grid { grid-template-columns: 280px 1fr; gap: 48px; }
+  .about-dr-grid { grid-template-columns: 240px 1fr; gap: 48px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
@@ -1216,7 +1216,7 @@ footer {
   .patients-image-2 img { height: 280px; }
 
   .about-dr-grid { grid-template-columns: 1fr; }
-  .about-dr-photo { position: static; max-width: 320px; }
+  .about-dr-photo { position: static; max-width: 280px; }
 
   .champion-grid { gap: 32px; }
 
