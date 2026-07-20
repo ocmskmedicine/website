@@ -402,7 +402,6 @@ h1, h2, h3, h4 {
   line-height: 1.35;
 }
 
-.prp-card { cursor: pointer; }
 .card-learn-more {
   display: inline-block;
   margin-top: 12px;
@@ -410,58 +409,6 @@ h1, h2, h3, h4 {
   font-weight: 600;
   color: var(--gold);
   letter-spacing: 0.04em;
-}
-
-/* PRP Modal */
-.prp-modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(10,20,40,0.6);
-  z-index: 1000;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
-.prp-modal-overlay.open { display: flex; }
-.prp-modal-box {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  padding: 40px;
-  max-width: 540px;
-  width: 100%;
-  position: relative;
-  box-shadow: var(--shadow-lg);
-}
-.prp-modal-close {
-  position: absolute;
-  top: 16px; right: 20px;
-  background: none;
-  border: none;
-  font-size: 1.6rem;
-  color: var(--text-light);
-  cursor: pointer;
-  line-height: 1;
-}
-.prp-modal-close:hover { color: var(--navy); }
-.prp-modal-points { display: flex; flex-direction: column; gap: 20px; }
-.prp-modal-point {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-.prp-modal-icon { flex-shrink: 0; width: 22px; margin-top: 2px; }
-.prp-modal-point strong {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
-.prp-modal-point p {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  line-height: 1.6;
-  margin: 0;
 }
 
 /* ============================================
