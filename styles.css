@@ -201,6 +201,7 @@ h1, h2, h3, h4 {
   transition: color var(--transition);
 }
 .nav-links a:hover { color: var(--gold-light); }
+.nav-links-logo { display: none; }
 .nav-cta {
   background: var(--gold);
   color: var(--white) !important;
@@ -1241,6 +1242,8 @@ a.treatment-card {
   }
   .nav-links.open { right: 0; }
   .nav-links a { font-size: 1.1rem; }
+  .nav-links-logo { display: flex; justify-content: center; margin-top: -60px; margin-bottom: 8px; }
+  .nav-links-logo .logo-img { height: 64px; }
   .nav-cta { text-align: center; }
 
   .about-clinic-grid { grid-template-columns: 1fr; gap: 40px; }
