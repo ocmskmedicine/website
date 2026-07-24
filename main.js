@@ -26,6 +26,7 @@ document.addEventListener('click', (e) => {
 function toggleAccordion(btn) {
   const body = btn.nextElementSibling;
   const isOpen = body.classList.contains('open');
+  const beforeTop = btn.getBoundingClientRect().top;
 
   // Close all open accordion bodies
   document.querySelectorAll('.accordion-body.open').forEach(b => b.classList.remove('open'));
@@ -35,6 +36,11 @@ function toggleAccordion(btn) {
     body.classList.add('open');
     btn.classList.add('active');
   }
+
+  // Keep the clicked button pinned in place, so collapsing a taller
+  // accordion above it doesn't yank the viewport down the page.
+  const afterTop = btn.getBoundingClientRect().top;
+  window.scrollBy(0, afterTop - beforeTop);
 }
 
 // Contact form handler (placeholder — wire to backend/form service as needed)
