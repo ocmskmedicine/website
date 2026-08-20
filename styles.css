@@ -916,6 +916,17 @@ h1, h2, h3, h4 {
   border-radius: 50%;
   flex-shrink: 0;
 }
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border, #eee);
+}
+.hours-row:last-child { border-bottom: none; }
+.hours-row span:first-child { color: var(--navy); font-weight: 600; }
 .contact-form-section {
   background: var(--white);
   border-radius: var(--radius-lg);
