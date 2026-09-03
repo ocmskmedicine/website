@@ -24,6 +24,9 @@
   .price-name { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 16.5px; color: #1c2434; }
   .price-note { font-size: 13px; color: #7a7264; margin-top: 3px; }
   .price-amount { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: 17px; color: #1c2434; white-space: nowrap; }
+  .price-tag { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.01em; border-radius: 999px; padding: 4px 11px; }
+  .price-tag-insured { color: #3f6b34; background: #eef4ea; border: 1px solid #cfe0c8; }
+  .price-tag-cash { color: #7a5a1e; background: #f6efdd; border: 1px solid #e6d7ad; }
 
   @media (max-width: 700px) {
     .g-2col { grid-template-columns: 1fr !important; }
@@ -85,7 +88,18 @@
     </div>
   </section>
 
-  <section style="max-width: 780px; margin: 0 auto; padding: 64px 24px 8px; width: 100%;">
+  <section style="max-width: 780px; margin: 0 auto; padding: 40px 24px 0; width: 100%;">
+    <div style="background: #eef4ea; border: 1px solid #cfe0c8; border-radius: 6px; padding: 26px 28px; display: flex; gap: 16px; align-items: flex-start;">
+      <span style="flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: #3f6b34; color: #f5f1e8; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center;">&#10003;</span>
+      <div>
+        <h2 style="margin: 0 0 8px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 20px; color: #1c2434;">If You Have Insurance, Read This First</h2>
+        <p style="margin: 0 0 10px; font-size: 15px; line-height: 1.65; color: #3a4230;">With the <strong>one exception of PRP</strong>, every service on this page &mdash; every office visit and every other procedure listed below &mdash; is billed to your insurance and covered at <strong>$0 out-of-pocket cost to you</strong> if you have an accepted plan (Cigna, Anthem Blue Cross, Aetna, United Healthcare, or Medicare). You should never be charged the self-pay prices below if you have applicable insurance.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3a4230;">The self-pay / cash-pay prices on this page apply <strong>only</strong> to patients without applicable insurance coverage, or who choose to pay directly instead of billing their plan. PRP is a regenerative treatment not covered by any insurance plan, so it is cash-pay for all patients.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 780px; margin: 0 auto; padding: 56px 24px 8px; width: 100%;">
     <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
       <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2b4a8a; font-weight: 600;">Visits &amp; Consults</span>
       <h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 28px; line-height: 1.2;">Office Visits</h2>
@@ -96,15 +110,15 @@
       </thead>
       <tbody>
         <tr>
-          <td><div class="price-name">New Patient Consultation</div><div class="price-note">Full history, physical exam, and treatment plan discussion with Dr. Salamatipour</div></td>
+          <td><div class="price-name">New Patient Consultation</div><div class="price-note">Full history, physical exam, and treatment plan discussion with Dr. Salamatipour</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">Free</td>
         </tr>
         <tr>
-          <td><div class="price-name">Follow-Up Visit</div></td>
+          <td><div class="price-name">Follow-Up Visit</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">$100</td>
         </tr>
         <tr>
-          <td><div class="price-name">Diagnostic Ultrasound</div><div class="price-note">In-office musculoskeletal ultrasound to evaluate the affected area</div></td>
+          <td><div class="price-name">Diagnostic Ultrasound</div><div class="price-note">In-office musculoskeletal ultrasound to evaluate the affected area</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">$60</td>
         </tr>
       </tbody>
@@ -123,19 +137,19 @@
       </thead>
       <tbody>
         <tr>
-          <td><div class="price-name">Prolotherapy</div></td>
+          <td><div class="price-name">Prolotherapy</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">$150&ndash;$300</td>
         </tr>
         <tr>
-          <td><div class="price-name">Platelet-Rich Plasma (PRP) — Single Injection</div><div class="price-note">Includes Alpha-2-Macroglobulin (A2M), bundled into the PRP visit rather than priced separately &mdash; see our <a href="treatments/prp.html">PRP page</a> for details</div></td>
+          <td><div class="price-name">Platelet-Rich Plasma (PRP) — Single Injection</div><div class="price-note">Includes Alpha-2-Macroglobulin (A2M), bundled into the PRP visit rather than priced separately &mdash; see our <a href="treatments/prp.html">PRP page</a> for details</div><div class="price-tag price-tag-cash">Not covered by insurance &mdash; cash-pay for all patients</div></td>
           <td class="price-amount">$750</td>
         </tr>
         <tr>
-          <td><div class="price-name">Viscosupplementation</div></td>
+          <td><div class="price-name">Viscosupplementation</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">$700</td>
         </tr>
         <tr>
-          <td><div class="price-name">Nerve Hydrodissection</div></td>
+          <td><div class="price-name">Nerve Hydrodissection</div><div class="price-tag price-tag-insured">With insurance: $0 &mdash; no cost to you</div></td>
           <td class="price-amount">$140</td>
         </tr>
       </tbody>
@@ -147,8 +161,8 @@
     <div style="background: #f6f2e8; border: 1px solid #e6ddc4; border-radius: 6px; padding: 24px 28px; display: flex; gap: 14px; align-items: flex-start;">
       <span style="flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #c9b489; color: #1c2434; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center;">i</span>
       <div>
-        <h4 style="margin: 0 0 6px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 16px; color: #1c2434;">Why We Offer Cash-Pay Pricing</h4>
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.65; color: #4a4436;">A free consultation and a low-cost diagnostic ultrasound keep the front door to care open to everyone, regardless of insurance status. Our procedure pricing is intentionally set below what many corporate clinics in Orange County charge, so patients without applicable coverage &mdash; or who simply prefer to pay directly &mdash; still have access to advanced, ultrasound-guided orthobiologic care.</p>
+        <h4 style="margin: 0 0 6px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 16px; color: #1c2434;">Why We Show Self-Pay Pricing</h4>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.65; color: #4a4436;">Most patients with an accepted insurance plan pay $0 for everything on this page except PRP &mdash; the self-pay prices above only apply to patients without applicable coverage, or who choose to pay directly. A free consultation and a low-cost diagnostic ultrasound keep the front door to care open to everyone regardless of insurance status, and our self-pay procedure pricing is intentionally set below what many corporate clinics in Orange County charge, so patients paying out of pocket still have access to advanced, ultrasound-guided orthobiologic care.</p>
       </div>
     </div>
   </section>
@@ -160,8 +174,8 @@
       <h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.2;">Cash-Pay Pricing &amp; Financial Policy</h2>
     </div>
     <div style="display: flex; flex-direction: column; gap: 16px; font-size: 14px; line-height: 1.7; color: #4a4436;">
-      <p><strong style="color: #1c2434;">Cash-pay / self-pay only.</strong> The rates listed on this page apply only to patients who choose to pay directly for their care. They are separate from, and may differ from, our fee schedules for insurance-based billing, including PPO plans, Medicare, workers&rsquo; compensation, and TRICARE. Cash-pay pricing is not available to be combined with insurance billing for the same service.</p>
-      <p><strong style="color: #1c2434;">No insurance claims submitted.</strong> When you elect to pay a cash-pay rate for a visit or procedure, OC Musculoskeletal Medical Center will not submit a claim to your insurance carrier for that service, and you agree to waive your right to submit a claim for reimbursement of that service yourself. If you would like your insurance billed instead of paying a cash-pay rate, please let our staff know before your visit so we can confirm eligibility and coverage.</p>
+      <p><strong style="color: #1c2434;">Insurance is billed by default.</strong> With the exception of PRP, which is not covered by any insurance plan, every service listed on this page is eligible for insurance billing. If you have an accepted plan (Cigna, Anthem Blue Cross, Aetna, United Healthcare, or Medicare), we bill your insurance and you owe $0 out of pocket for that service. The self-pay rates listed on this page apply <strong>only</strong> when you do not have applicable insurance coverage, or when you choose to pay directly instead of billing your plan.</p>
+      <p><strong style="color: #1c2434;">Cash-pay / self-pay rates are separate from insurance billing.</strong> The self-pay prices above are separate from, and may differ from, our fee schedules for insurance-based billing, including PPO plans, Medicare, workers&rsquo; compensation, and TRICARE. If you elect to pay a self-pay rate for a service instead of billing your insurance, OC Musculoskeletal Medical Center will not submit a claim to your insurance carrier for that service, and you agree to waive your right to submit a claim for reimbursement of that service yourself. Just let our staff know before your visit whether you'd like a service billed to insurance or paid for directly, and we'll confirm your eligibility and coverage.</p>
       <p><strong style="color: #1c2434;">Estimate only &mdash; not a guarantee of final cost.</strong> Prices shown are current as of September 2026 and are subject to change without notice. Your actual cost of care may vary depending on your specific diagnosis, treatment plan, and any additional services your physician recommends (for example, additional visits, imaging, or injections). We will discuss your individualized treatment plan and associated costs with you before any procedure.</p>
       <p><strong style="color: #1c2434;">Payment terms.</strong> Payment is due at the time of service unless other arrangements have been made in advance with our office. We accept major credit cards, debit cards, cash, and check.</p>
       <p><strong style="color: #1c2434;">No guarantee of outcome.</strong> This page is provided for general informational purposes only and does not constitute medical advice or a treatment recommendation. All treatment decisions are made on an individual basis following an evaluation by Dr. Salamatipour. As with any medical treatment, individual results vary and no specific outcome is guaranteed.</p>
