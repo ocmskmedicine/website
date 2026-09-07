@@ -1070,7 +1070,9 @@ footer {
 }
 .footer-bottom-links {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
 }
 .footer-bottom-links a {
   color: rgba(255,255,255,0.4);
