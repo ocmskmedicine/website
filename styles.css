@@ -319,9 +319,9 @@ h1, h2, h3, h4 {
 .cred-item {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
-  padding: 10px 28px;
+  padding: 10px 28px 10px 56px;
   border-right: 1px solid rgba(255,255,255,0.12);
   border-bottom: 1px solid rgba(255,255,255,0.12);
   color: rgba(255,255,255,0.82);
@@ -1302,7 +1302,7 @@ a.treatment-card {
   .footer-bottom { flex-direction: column; text-align: center; }
 
   .credential-strip .container { grid-template-columns: repeat(2, 1fr); }
-  .cred-item { border-right: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .cred-item { padding-left: 28px; border-right: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12); }
   .cred-item:nth-child(3n) { border-right: 1px solid rgba(255,255,255,0.12); }
   .cred-item:nth-child(2n) { border-right: none; }
   .cred-item:nth-child(n+4) { border-bottom: 1px solid rgba(255,255,255,0.12); }
