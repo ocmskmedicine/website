@@ -26,9 +26,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   details > summary { list-style: none; cursor: pointer; }
   details > summary::-webkit-details-marker { display: none; }
   details[open] .faq-chevron { transform: rotate(45deg); }
+  .us-zoom { display: block; cursor: zoom-in; }
+  .us-zoom:focus-visible { outline: 2px solid #2b4a8a; outline-offset: 2px; }
+  .us-lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(10,14,22,0.92); display: none; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; cursor: zoom-out; }
+  .us-lightbox.open { display: flex; }
+  .us-lightbox img { max-width: 100%; max-height: calc(100vh - 140px); width: auto; height: auto; border-radius: 4px; }
+  .us-lightbox p { margin: 0; max-width: 80ch; text-align: center; font-size: 15px; line-height: 1.5; color: #ece7db; }
+  .us-lightbox button { position: absolute; top: 14px; right: 18px; background: none; border: 0; color: #f5f1e8; font-size: 34px; line-height: 1; cursor: pointer; padding: 6px; }
 
   @media (max-width: 700px) {
-    .g-hero, .g-2col, .g-list2, .g-treat { grid-template-columns: 1fr !important; }
+    .g-hero, .g-2col, .g-list2, .g-treat, .g-us { grid-template-columns: 1fr !important; }
   }
   @media (max-width: 640px) {
     .site-header-inner { flex-wrap: wrap; row-gap: 10px; }
@@ -126,6 +133,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span style="font-size: 15.5px; line-height: 1.5; color: #ece7db;">If relief is incomplete, hyaluronidase is added on a second, ultrasound-guided procedure to more fully break down thickened, fibrotic fascia and release entrapped nerve branches</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1080px; margin: 0 auto; padding: 56px 24px 0; width: 100%;">
+    <div style="background: #ffffff; border: 1px solid #e6e1d6; border-radius: 6px; padding: 32px; box-shadow: 0 10px 30px rgba(28,36,52,0.06);">
+      <div style="display: flex; flex-direction: column; gap: 10px; max-width: 62ch;">
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2b4a8a; font-weight: 600;">Under Ultrasound</span>
+        <h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 28px; line-height: 1.2;">What Fascia Hydrodissection Looks Like</h2>
+      </div>
+      <div class="g-us" style="margin-top: 28px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px;">
+        <div style="background: #000; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 30px rgba(28,36,52,0.10);">
+          <a class="us-zoom" href="../us-fascia-1.jpg" aria-label="View larger image"><img src="../us-fascia-1.jpg" alt="Ultrasound image showing the needle approaching the investing cervical fascia overlying the trapezius muscle" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+        </div>
+        <figcaption style="font-size: 13.5px; line-height: 1.5; color: #4a4436;"><strong style="color: #2b4a8a;">1.</strong> The needle approaches the investing cervical fascia overlying the trapezius muscle.</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px;">
+        <div style="background: #000; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 30px rgba(28,36,52,0.10);">
+          <a class="us-zoom" href="../us-fascia-2.jpg" aria-label="View larger image"><img src="../us-fascia-2.jpg" alt="Ultrasound image showing the needle tip positioned within the fascial layer" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+        </div>
+        <figcaption style="font-size: 13.5px; line-height: 1.5; color: #4a4436;"><strong style="color: #2b4a8a;">2.</strong> The needle tip is positioned precisely within the fascial layer.</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px;">
+        <div style="background: #000; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 30px rgba(28,36,52,0.10);">
+          <a class="us-zoom" href="../us-fascia-3.jpg" aria-label="View larger image"><img src="../us-fascia-3.jpg" alt="Ultrasound image showing injected fluid spreading the fascial layers apart" loading="lazy" style="display: block; width: 100%; height: auto;"></a>
+        </div>
+        <figcaption style="font-size: 13.5px; line-height: 1.5; color: #4a4436;"><strong style="color: #2b4a8a;">3.</strong> The injected fluid spreads the fascia apart as the needle is slowly advanced through this layer of connective tissue to gently release the small nerves that are held within it.</figcaption>
+      </figure>
+      </div>
+      <p style="margin: 14px 0 0; font-size: 13px; color: #7a7264; font-style: italic;">Click any image to enlarge.</p>
+      <p style="margin: 16px 0 0; font-size: 14.5px; line-height: 1.6; color: #4a4436; max-width: 80ch;">These images show an ultrasound-guided fascia hydrodissection (or hydrorelease) in the upper back. Under real-time ultrasound, fluid is delivered directly into the restricted fascial plane, separating the fascial layers to release the nerve branches that run through them.</p>
     </div>
   </section>
 
@@ -273,5 +311,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 </div>
+
+  <div class="us-lightbox" id="us-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged ultrasound image">
+    <button type="button" aria-label="Close">&times;</button>
+    <img src="" alt="">
+    <p></p>
+  </div>
+  <script>
+    (function () {
+      var box = document.getElementById('us-lightbox');
+      var img = box.querySelector('img'), cap = box.querySelector('p');
+      var last;
+      function close() { box.classList.remove('open'); document.body.style.overflow = ''; if (last) last.focus(); }
+      document.querySelectorAll('.us-zoom').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          last = a;
+          var thumb = a.querySelector('img');
+          img.src = a.getAttribute('href');
+          img.alt = thumb.alt;
+          cap.innerHTML = a.closest('figure').querySelector('figcaption').innerHTML;
+          box.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          box.querySelector('button').focus();
+        });
+      });
+      box.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && box.classList.contains('open')) close(); });
+    })();
+  </script>
 </body>
 </html>
