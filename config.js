@@ -5,7 +5,9 @@
     Sentry.init({
       ignoreErrors: [
         // Injected by Facebook/Instagram in-app browsers on iOS, not our code.
-        /window\.webkit\.messageHandlers/
+        /window\.webkit\.messageHandlers/,
+        // Thrown by browser extensions / DuckDuckGo's injected scripts, not our code.
+        /Invalid call to runtime\.sendMessage\(\)/
       ]
     });
   };
