@@ -29,12 +29,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physician",
+    "@type": ["Physician", "Person"],
     "@id": "https://ocmsk.com/about.html#physician",
     "name": "Dr. Ashkan Salamatipour",
+    "givenName": "Ashkan",
+    "familyName": "Salamatipour",
+    "honorificPrefix": "Dr.",
+    "honorificSuffix": "DO",
+    "jobTitle": "Sports Medicine & Non-Operative Orthopedic Physician",
+    "description": "Board-certified sports medicine physician and founder of OC Musculoskeletal Medical Center in Newport Beach, Orange County, California, specializing in non-surgical orthopedics and ultrasound-guided procedures.",
     "image": "https://ocmsk.com/Headshot%202025.png",
-    "medicalSpecialty": "SportsMedicine",
+    "medicalSpecialty": ["SportsMedicine", "PrimaryCare"],
     "url": "https://ocmsk.com/about.html",
+    "knowsAbout": [
+      "Sports medicine",
+      "Non-operative orthopedics",
+      "Musculoskeletal ultrasound",
+      "Platelet-rich plasma (PRP)",
+      "Orthobiologics",
+      "Prolotherapy",
+      "Viscosupplementation",
+      "Nerve hydrodissection",
+      "Fascia hydrodissection",
+      "Osteoarthritis",
+      "Tendinopathy",
+      "Sports injuries"
+    ],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Board Certification", "name": "Board Certification in Family Medicine"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Fellowship", "name": "Sports Medicine Fellowship", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Indiana University School of Medicine"}},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Residency", "name": "Family Medicine Residency", "recognizedBy": {"@type": "Hospital", "name": "Lutheran General Hospital"}},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Degree", "name": "Doctor of Osteopathic Medicine (DO)", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Midwestern University, Chicago College of Osteopathic Medicine"}}
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Indiana University School of Medicine"},
+      {"@type": "Hospital", "name": "Lutheran General Hospital"},
+      {"@type": "CollegeOrUniversity", "name": "Midwestern University, Chicago College of Osteopathic Medicine"},
+      {"@type": "CollegeOrUniversity", "name": "University of Pennsylvania"},
+      {"@type": "CollegeOrUniversity", "name": "University of California, Berkeley"}
+    ],
+    "affiliation": [
+      {"@type": "SportsTeam", "name": "AV Alta FC", "description": "Head Team Physician"},
+      {"@type": "SportsOrganization", "name": "USA Boxing", "description": "Team Physician"},
+      {"@type": "EducationalOrganization", "name": "Southwest Healthcare Family Medicine Residency, Palmdale Regional Medical Center", "description": "Faculty appointment"}
+    ],
     "areaServed": {"@type": "AdministrativeArea", "name": "Orange County, California"},
     "sameAs": [
       "https://www.healthgrades.com/physician/dr-ashkan-salamatipour-tmkdnpp204",
@@ -350,14 +388,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-col">
         <h4>Treatments</h4>
         <ul>
-          <li><a href="index.html#treatments">Platelet Rich Plasma (PRP)</a></li>
+          <li><a href="treatments/prp.html">Platelet Rich Plasma (PRP)</a></li>
           <li><a href="index.html#treatments">Viscosupplementation</a></li>
-          <li><a href="index.html#treatments">Prolotherapy</a></li>
+          <li><a href="treatments/prolotherapy.html">Prolotherapy</a></li>
           <li><a href="index.html#treatments">Tenotomy</a></li>
           <li><a href="index.html#treatments">SPRINT PNS</a></li>
           <li><a href="index.html#treatments">IOVERA&deg;</a></li>
-          <li><a href="index.html#treatments">Nerve Hydrodissection</a></li>
-          <li><a href="index.html#treatments">Fascia Hydrodissection</a></li>
+          <li><a href="treatments/nerve-hydrodissection.html">Nerve Hydrodissection</a></li>
+          <li><a href="treatments/fascia-hydrodissection.html">Fascia Hydrodissection</a></li>
           <li><a href="index.html#treatments">Capsular Hydrodistension</a></li>
         </ul>
       </div>
